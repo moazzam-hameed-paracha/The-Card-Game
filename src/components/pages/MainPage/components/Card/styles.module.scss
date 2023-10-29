@@ -1,0 +1,25 @@
+.container {
+  height: 100px;
+  padding: 10px;
+  width: 190px;
+  border-radius: 8px;
+  border: 4px solid #ccc;
+  color: white;
+  cursor: pointer;
+}
+
+.overflow-hidden {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.basket {
+  transition: opacity 0.5s ease-in;
+  opacity: 1;
+
+  .hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
