@@ -1,7 +1,7 @@
 {
   "name": "card-game",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -35,7 +35,6 @@
     "autoprefixer": "^10.4.14",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react-hooks": "next",
-    "postcss": "^8.4.21",
     "prettier": "^2.8.8"
   }
 }
