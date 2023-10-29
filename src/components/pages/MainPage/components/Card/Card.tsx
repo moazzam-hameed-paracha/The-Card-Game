@@ -11,7 +11,7 @@ type CardProps = {
 const Card = ({ player, idx }: CardProps) => {
   return (
     <div className={clsx(styles.container)} style={{
-      animationDuration: `${idx * 0.3}s`,
+      animationDuration: `${idx * 0.4}s`,
     }}>
       <div className={clsx("card-text", styles["overflow-hidden"])}>
         Real Name: <b>{player.realName}</b>

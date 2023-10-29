@@ -1,7 +1,11 @@
 .container {
-  margin-top: 70px;
   display: flex;
   flex-flow: row wrap;
   width: 600px;
   gap: 10px;
+}
+
+.heading {
+  margin: 40px 0 10px 0;
+  color: #fff;
 }

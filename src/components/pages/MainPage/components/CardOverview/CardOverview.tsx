@@ -22,13 +22,16 @@ const CardOverview = ({
   setSelectedPlayer,
 }: CardOverviewProps) => {
   return (
-    <div className={styles.container}>
-      {playersList.map((player, idx) => (
-        <div key={player.realName} onClick={() => setSelectedPlayer(player)}>
-          <Card idx={idx} player={player} />
-        </div>
-      ))}
-    </div>
+    <>
+      <h3 className={styles.heading}>Overview</h3>
+      <div className={styles.container}>
+        {playersList.map((player, idx) => (
+          <div key={player.realName} onClick={() => setSelectedPlayer(player)}>
+            <Card idx={idx} player={player} />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
