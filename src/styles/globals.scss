@@ -24,7 +24,8 @@ body {
     rgba(109, 207, 246, 1),
     rgba(240, 117, 173, 1)
   );
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 
 button {
