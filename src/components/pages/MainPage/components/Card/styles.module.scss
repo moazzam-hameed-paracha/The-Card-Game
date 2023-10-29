@@ -6,6 +6,11 @@
   border: 4px solid #ccc;
   color: white;
   cursor: pointer;
+  animation: fadeIn ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px #ccc;
+  }
 }
 
 .overflow-hidden {
@@ -14,12 +19,11 @@
   text-overflow: ellipsis;
 }
 
-.basket {
-  transition: opacity 0.5s ease-in;
-  opacity: 1;
-
-  .hide {
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -4,12 +4,15 @@ import styles from "./styles.module.scss";
 import clsx from "clsx";
 
 type CardProps = {
+  idx: number;
   player: StudentResponseData["playerList"][0];
 };
 
-const Card = ({ player }: CardProps) => {
+const Card = ({ player, idx }: CardProps) => {
   return (
-    <div className={clsx(styles.container)}>
+    <div className={clsx(styles.container)} style={{
+      animationDuration: `${idx * 0.3}s`,
+    }}>
       <div className={clsx("card-text", styles["overflow-hidden"])}>
         Real Name: <b>{player.realName}</b>
       </div>
