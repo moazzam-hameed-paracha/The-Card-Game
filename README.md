@@ -1,2 +1,4 @@
-# The Card Game
- A card game.
+## Student Ranks
+
+- Coding interview task.
+- Fullstack application build in Next JS, get cards from BE API, show cards with sort filters and animation. Also post selected card.
